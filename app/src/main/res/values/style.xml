@@ -3,20 +3,48 @@
     <style name="CustomButton">
         <item name="android:fontFamily">@font/poppins_regular</item>
         <item name="android:textColor">@color/white</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
         <item name="backgroundTint">@color/primary</item>
-        <item name="cornerRadius">7dp</item>
+        <item name="cornerRadius">@dimen/RadiusButton</item>
+    </style>
+
+    <style name="CustomButtonIcon" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="android:layout_height">@dimen/IconsSizeButton</item>
+        <item name="android:layout_width">@dimen/IconsSizeButton</item>
+        <item name="android:padding">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconSize">@dimen/IconsSizeButton</item>
+        <item name="cornerRadius">@dimen/RadiusButton</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+    </style>
+
+    <style name="CustomButtonIconCircle" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="android:layout_height">@dimen/IconsSizeButton</item>
+        <item name="android:layout_width">@dimen/IconsSizeButton</item>
+        <item name="android:padding">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconSize">@dimen/IconsSizeButton</item>
+        <item name="cornerRadius">@dimen/RadiusButtonAccount</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
     </style>
 
     <style name="CustomTextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
         <item name="android:textColor">@color/text_main</item>
         <item name="boxStrokeColor">@color/primary</item>
         <item name="boxStrokeWidthFocused">2dp</item>
-        <item name="boxCornerRadiusTopStart">7dp</item>
-        <item name="boxCornerRadiusTopEnd">7dp</item>
-        <item name="boxCornerRadiusBottomStart">7dp</item>
-        <item name="boxCornerRadiusBottomEnd">7dp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/RadiusTextInputEditText</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/RadiusTextInputEditText</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/RadiusTextInputEditText</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/RadiusTextInputEditText</item>
         <item name="hintTextColor">@color/primary</item>
         <item name="startIconTint">@color/primary</item>
         <item name="expandedHintEnabled">false</item>
@@ -24,13 +52,27 @@
 
     <style name="CustomTextInputEditText">
         <item name="android:textColor">@color/text_main</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">@dimen/SizeText</item>
         <item name="android:fontFamily">@font/poppins_regular</item>
     </style>
 
     <style name="CustomTextViewRegular">
         <item name="android:textColor">@color/text_main</item>
         <item name="android:fontFamily">@font/poppins_regular</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">@dimen/SizeText</item>
+    </style>
+
+    <style name="CustomTextViewRegularRounded">
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/bg_text_view_rounded</item>
+        <item name="android:textColor">@color/text_main</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/SizeText</item>
+    </style>
+
+    <style name="CustomTextViewTitle">
+        <item name="android:textColor">@color/text_main</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">@dimen/SizeTextTitle</item>
     </style>
 </resources>

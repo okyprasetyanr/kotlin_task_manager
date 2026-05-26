@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="SizeEmptyView">10dp</dimen>
+    <dimen name="SizeText">12sp</dimen>
+    <dimen name="SizeTextTitle">20sp</dimen>
+    <dimen name="RadiusButton">7dp</dimen>
+    <dimen name="RadiusButtonAccount">10dp</dimen>
+    <dimen name="RadiusTextInputEditText">7dp</dimen>
+    <dimen name="IconsSizeButton">50dp</dimen>
+</resources>
